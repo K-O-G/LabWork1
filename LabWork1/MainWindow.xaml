@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LabWork1"
         mc:Ignorable="d"
-        Title="Specialize: 121 (6.050103) 'Software engineering'" Height="416.783" Width="525" WindowStyle="ToolWindow" FontSize="21.333" FontFamily="Verdana">
+        Title="Specialize: 121 (6.050103) 'Software engineering'" Height="416.783" Width="525" WindowStyle="ToolWindow" FontSize="22" FontFamily="Verdana">
     <Grid>
         <Grid Margin="0,0,0,209">
             <Button x:Name="button" Content="View result" HorizontalAlignment="Center" Width="204" FontFamily="Verdana" FontSize="16" Margin="149,86,164,36"/>

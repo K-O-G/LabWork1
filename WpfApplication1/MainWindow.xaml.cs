@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LabWork1
+namespace WpfApplication1
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -22,7 +22,7 @@ namespace LabWork1
     {
         public MainWindow()
         {
-            //InitializeComponent();
+           // InitializeComponent();
         }
     }
 }
