@@ -1,9 +1,9 @@
-﻿<Window x:Class="LabWork1.MainWindow"
+﻿<Window x:Class="WpfApplication2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApplication1"
+        xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
         Title="Specialize: 121 (6.050103) 'Software engineering'" Height="698.11" Width="633.722" WindowStyle="ToolWindow" FontSize="22" FontFamily="Verdana">
     <Grid Margin="0,0,0,-4">
@@ -15,41 +15,41 @@
             <RowDefinition Height="246*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="313"/>
+            <ColumnDefinition Width="313"/>
         </Grid.ColumnDefinitions>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#FFDDE8EC">
             <UniformGrid x:Name="UniformGrid" Columns="1" Rows="5" >
                 <Label x:Name="Label0" Content="Course year (Bacaleur)"></Label>
-                <RadioButton x:Name="RadioButton" Content="1" IsChecked="True"/>
-                <RadioButton x:Name="RadioButton1" Content="2"/>
-                <RadioButton x:Name="RadioButton2" Content="3"/>
-                <RadioButton x:Name="RadioButton3" Content="4"/>
+                <RadioButton x:Name="RadioButton" GroupName="course"  IsChecked="True" Content="1"/>
+                <RadioButton x:Name="RadioButton1" GroupName="course" Content="2"/>
+                <RadioButton x:Name="RadioButton2" GroupName="course" Content="3"/>
+                <RadioButton x:Name="RadioButton3" GroupName="course" Content="4"/>
             </UniformGrid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="1" Background="#FFF7F7F7">
             <UniformGrid x:Name="UniformGrid1" Columns="1" Rows="2">
                 <Label x:Name="Label2" Content="Course year (Specialist)"></Label>
-                <RadioButton x:Name="RadioButton4" Content="5"/>
+                <RadioButton x:Name="RadioButton4" GroupName="course" Content="5"/>
             </UniformGrid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1" Grid.Column="1" Background="#FFE5E2E8">
             <UniformGrid x:Name="UniformGrid2" Columns="1" Rows="3" >
                 <Label x:Name="Label3" Content="Course year (Magister)"></Label>
-                <RadioButton x:Name="RadioButton5" Content="5"/>
-                <RadioButton x:Name="RadioButton6" Content="6"/>
+                <RadioButton x:Name="RadioButton5" GroupName="course" Content="5"/>
+                <RadioButton x:Name="RadioButton6" GroupName="course" Content="6"/>
             </UniformGrid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Background="#FFEAEBEC">
             <Grid x:Name="UniformGrid3" >
                 <Label x:Name="Label4" Content="Cycles" Margin="0,0,0,146"></Label>
                 <UniformGrid  Columns="2" Margin="0,48,0,0">
-                    <RadioButton x:Name="RadioButton7" Content="Social"/>
-                    <RadioButton x:Name="RadioButton8" Content="Humanitarian"/>
-                    <RadioButton x:Name="RadioButton9" Content="Vocational technical"/>
-                    <RadioButton x:Name="RadioButton10" Content="Professional"/>
-                    <RadioButton x:Name="RadioButton11" Content="Choice of university"/>
-                    <RadioButton x:Name="RadioButton12" Content="Choice of student"/>
+                    <RadioButton x:Name="RadioButton7" GroupName="special" Content="Social" IsChecked="True"/>
+                    <RadioButton x:Name="RadioButton8" GroupName="special" Content="Humanitarian"/>
+                    <RadioButton x:Name="RadioButton9" GroupName="special" Content="Vocational technical"/>
+                    <RadioButton x:Name="RadioButton10" GroupName="special" Content="Professional"/>
+                    <RadioButton x:Name="RadioButton11" GroupName="special" Content="Choice of university"/>
+                    <RadioButton x:Name="RadioButton12" GroupName="special" Content="Choice of student"/>
                 </UniformGrid>
             </Grid>
         </Border>

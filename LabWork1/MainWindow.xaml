@@ -8,10 +8,13 @@
         Title="Specialize: 121 (6.050103) 'Software engineering'" Height="416.783" Width="525" WindowStyle="ToolWindow" FontSize="22" FontFamily="Verdana">
     <Grid>
         <Grid Margin="0,0,0,209">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
             <Button x:Name="button" Content="View result" HorizontalAlignment="Center" Width="204" FontFamily="Verdana" FontSize="16" Margin="149,86,164,36"/>
             <Label x:Name="Label" Content="Course year" Margin="29,0,317,119" FontFamily="Verdana" FontSize="16"/>
             <Label x:Name="Label1" Content="Cycles" Margin="311,0,145,119" FontFamily="Verdana" FontSize="16"/>
-            <ComboBox x:Name="comboBox" HorizontalAlignment="Right" Margin="0,34,317,0" VerticalAlignment="Top" Width="171" FontFamily="Verdana" FontSize="16">
+            <ComboBox x:Name="comboBox" Margin="29,34,317,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="16">
                 <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="118"/>
                 <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="118"/>
                 <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="118"/>
@@ -20,13 +23,13 @@
                 <ComboBoxItem Content="Magistr: 6" HorizontalAlignment="Left" Width="118"/>
                 <ComboBoxItem Content="Magistr: 6" HorizontalAlignment="Left" Width="118"/>
             </ComboBox>
-            <ComboBox x:Name="comboBox1" HorizontalAlignment="Right" Margin="0,34,35,0" VerticalAlignment="Top" Width="171" FontFamily="Verdana" FontSize="16">
-                <ComboBoxItem Content="Social" HorizontalAlignment="Left" Width="118"/>
-                <ComboBoxItem Content="Humanitarian" HorizontalAlignment="Left" Width="118"/>
-                <ComboBoxItem Content="Vocational technical" HorizontalAlignment="Left" Width="118"/>
-                <ComboBoxItem Content="Professional" HorizontalAlignment="Left" Width="118"/>
-                <ComboBoxItem Content="Choice of university" HorizontalAlignment="Left" Width="118"/>
-                <ComboBoxItem Content="Choice of student" HorizontalAlignment="Left" Width="118"/>
+            <ComboBox x:Name="comboBox1" Margin="311,34,35,119" FontFamily="Verdana" FontSize="16">
+                <ComboBoxItem Content="Social" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Humanitarian" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Vocational technical" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Professional" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Choice of university" HorizontalAlignment="Left"/>
+                <ComboBoxItem Content="Choice of student" HorizontalAlignment="Left" />
             </ComboBox>
         </Grid>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top" Height="193" Width="497" FontFamily="Verdana" FontSize="16">
